@@ -1,0 +1,22 @@
+.scanResult{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 5%;
+}
+.card{
+    text-align: center;
+}
+.card .critico{
+    color: red;
+    font-weight: bold;
+}
+.card .alto{
+    color: orange;
+    font-weight: bold;
+}
+@media(max-width: 800px){
+    .scanResult{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

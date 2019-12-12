@@ -1,0 +1,533 @@
+[
+    {
+        "id": "GetConfig",
+        "area": "Canais",
+        "repositorios": [
+            "auto_instalacao_api",
+            "db-scripts",
+            "entidades",
+            "gateway-api",
+            "gateway-api-ext",
+            "gateway-monitoracao",
+            "gci_autoinstalacao",
+            "gci_cadastro",
+            "gci_sinalizacao",
+            "gci_softwareexpress",
+            "gerenciador_batch",
+            "gerenciador_versao",
+            "gestao_chip",
+            "getconfig",
+            "getconfig-server",
+            "getconfig-ui",
+            "getconfig_client",
+            "getconfig_theme",
+            "getconfig_tools",
+            "getconfig_web",
+            "getcripto_ws",
+            "hbm_getconfig",
+            "host_configuracao_terminais",
+            "iso_server_tef_adq",
+            "iso_server_tef_vert",
+            "j8583",
+            "monitor_ativacao",
+            "monitor_ativacao_web",
+            "monitor_server",
+            "monitor_ui",
+            "ms-ativacao",
+            "ms-cfg-adq-tef",
+            "ms-cfg-vert-tef",
+            "ms-cliente",
+            "ms-commons",
+            "ms-equipamento",
+            "ms-gci-cadastro",
+            "ms-getconfig",
+            "ms-heartbeat",
+            "ms-notificacao",
+            "postman-collections",
+            "qa_tests",
+            "servicos_monitoracao",
+            "simulador-integracao",
+            "simulador-terminal"
+        ],
+        "criticos": 33,
+        "altos": 395
+    },
+    {
+        "id": "UNIPOS",
+        "area": "Canais",
+        "repositorios": [
+            "unipos"
+        ],
+        "criticos": 0,
+        "altos": 0
+    },
+    {
+        "id": "TEF Auttar",
+        "area": "Canais",
+        "repositorios": [
+            "auttar-tef"
+        ],
+        "criticos": 1,
+        "altos": 2
+    },
+    {
+        "id": "POS-TEF",
+        "area": "Canais",
+        "repositorios": [
+            "Biblioteca Compartilhada Ingenico",
+            "demo-pos-offline-shell",
+            "dll_integracao_nichos",
+            "manual",
+            "pacotes",
+            "postef",
+            "postef-gertec",
+            "Forkunipos-velho"
+        ],
+        "criticos": 1,
+        "altos": 24
+    },
+    {
+        "id": "POS",
+        "area": "Canais",
+        "repositorios": [
+            "Docs",
+            "GetconfigTools",
+            "legado-AppUnica",
+            "legado-fonte-android",
+            "legado-fonte-gerenciador",
+            "legado-fonte-normandia",
+            "legado-fonte-sagem",
+            "legado-fonte-tetra",
+            "legado-fonte-vx510",
+            "legado-fonte-vx680",
+            "legado-FonteUnico",
+            "legado-Link2500IntermediariaGER7",
+            "legado-outros-fontes-fonte_battery_manager_lib",
+            "legado-outros-fontes-fonte_libcripto_gertec",
+            "legado-outros-fontes-fonte_libcripto_ingenico",
+            "legado-outros-fontes-mobile_pos",
+            "legado-outros-fontes-pocs_pos_3_0",
+            "legado-outros-fontes-poc_memshared_vs_malloc",
+            "legado-pos-BRASIL",
+            "legado-pos-GP",
+            "legado-pos-Hypercom",
+            "legado-pos-ICT220",
+            "legado-pos-Ingenico",
+            "legado-pos-LAC",
+            "legado-pos-Nurit",
+            "legado-pos-PertOS",
+            "legado-pos-sagem-chile",
+            "legado-pos-sagem-crypto",
+            "legado-pos-sagem-dial",
+            "legado-pos-sagem-ethernet",
+            "legado-pos-sagem-gprs",
+            "legado-pos-Universal",
+            "legado-pos-verifone-dial",
+            "legado-pos-verifone-ethernet",
+            "legado-pos-verifone-gerenciador",
+            "legado-pos-verifone-gprs",
+            "legado-pos-verifone-pascoal-fase-2",
+            "legado-pos-verifone-vxlibcripto",
+            "legado-pos-verifone-vxlibqrencode",
+            "Unipos",
+            "util-CTools",
+            "util-DecEncodeMenuExpers",
+            "util-DecodeEstaticticaTLV",
+            "util-DecodeLogTLV",
+            "util-DecodeTabelaLac",
+            "util-EchoEth",
+            "util-GPackGen",
+            "util-IsoCrackerLac",
+            "util-MenuDinamicoGenerator",
+            "util-NavegarFluxosPerguntas",
+            "util-PosAppHomenagemVPs",
+            "util-ProcessaBoletoComSCC",
+            "util-TabCompTEF",
+            "util-TabelasCFG",
+            "util-TabelasDinamicas",
+            "util-TabelasDinamicasMSVC",
+            "util-WSAT",
+            "WatchdogSign"
+        ],
+        "criticos": 137,
+        "altos": 267
+    },
+    {
+        "id": "Smart POS",
+        "area": "Canais",
+        "repositorios": [
+            "apos-key-injector",
+            "apos-password-skin",
+            "autoinstalacao",
+            "bc-getnet",
+            "mdm",
+            "pagamento",
+            "pd-payment-slip",
+            "pd-qrcode-payment",
+            "poc-acessibilidade",
+            "poc-conciliator",
+            "poc-reconhecimento-facil",
+            "posdigital-example",
+            "posdigital-example-testes-automatizados",
+            "profile",
+            "rebatedor",
+            "sdk",
+            "sdk-getnet",
+            "settings",
+            "smart-pos",
+            "SnackPOS"
+        ],
+        "criticos": 15,
+        "altos": 198
+    },
+    {
+        "id": "Superget Mobile",
+        "area": "Canais",
+        "repositorios": [
+            "app-superget-android",
+            "app-superget-ios",
+            "lib-bc-bt-android",
+            "lib-bc-bt-ios",
+            "teste-android"
+        ],
+        "criticos": 7,
+        "altos": 64
+    },
+    {
+        "id": "Checkout PD",
+        "area": "Canais",
+        "repositorios": [
+            "checkout"
+        ],
+        "criticos": 0,
+        "altos": 0
+    },
+    {
+        "id": "Autenticador Auttar",
+        "area": "Canais",
+        "repositorios": [
+            "autenticador",
+            "autenticador_old",
+            "c3po"
+        ],
+        "criticos": 5,
+        "altos": 187
+    },
+    {
+        "id": "ECOMMERCE",
+        "area": "Gateway",
+        "repositorios": [
+            "ClientCommerce",
+            "eCommerce",
+            "eCommerce-commons",
+            "eCommerce-dao",
+            "eCommerceBatchConsulta",
+            "eCommerceBatchConsultaAutenticaLdap",
+            "eCommerceBatchConsultaComum",
+            "eCommerceBatchConsultaDAO",
+            "eCommerceBatchConsultaDecryption",
+            "eCommerceWS",
+            "eCommerceWS.archive",
+            "eCommerceWSEAR",
+            "ecommerce_rebatedor",
+            "injetor",
+            "InjetorTransacoesTeste",
+            "LojaECommerce",
+            "rebatedor-treeds"
+        ],
+        "criticos": 77,
+        "altos": 172
+    },
+    {
+        "id": "Ecommerce Auttar",
+        "area": "Gateway",
+        "repositorios": [
+            "api_distribuicao_brf",
+            "ecommerce-captura",
+            "ecommerce-core",
+            "ecommerce-ctf",
+            "ecommerce-gui",
+            "ecommerce-ws",
+            "gateway-pagamento",
+            "gateway-vtex"
+        ],
+        "criticos": 7,
+        "altos": 198
+    },
+    {
+        "id": "FEP-LAC",
+        "area": "Gateway",
+        "repositorios": [
+            "FepViewerService",
+            "legado-pos-LAC"
+        ],
+        "criticos": 0,
+        "altos": 23
+    },
+    {
+        "id": "Marketplace",
+        "area": "Gateway",
+        "repositorios": [
+            "api-mgm-adjustments",
+            "api-mgm-anticipation",
+            "api-mgm-extrato",
+            "api-mgm-onboarding-objectlock",
+            "api-mgm-onboarding-seller",
+            "api-mgm-onboarding-subseller-callback",
+            "api-mgm-onboarding-subseller-callback-proxy",
+            "api-mgm-onboarding-subseller-core",
+            "api-mgm-onboarding-subseller-facade",
+            "api-mgm-onboarding-subseller-siebel",
+            "api-mgm-payment-controller",
+            "api-mgm-releasepayment",
+            "api_mgm_physical_split",
+            "db-sql-mkt-place-ce-email",
+            "db-sql-mkt-place-ce-marketplace",
+            "db-sql-mkt-place-ce-marketplace-audit",
+            "lib-onboarding-dataaccess",
+            "lib-onboarding-framework",
+            "lib-portal-marketplace-management",
+            "MockCnab240",
+            "packages",
+            "scheduled-task-onboarding-subseller-callback",
+            "scheduled-task-onboarding-subseller-enrichment",
+            "scheduled-task-onboarding-subseller-qualification",
+            "solution-mgm-portal-web",
+            "web-portal-mgm",
+            "web-portal-mgm-closedxml",
+            "web-portal-mgm-proxy",
+            "web-portal-onboardingsubseller"
+        ],
+        "criticos": 54,
+        "altos": 136
+    },
+    {
+        "id": "Antecipação",
+        "area": "Gateway",
+        "repositorios": [
+            "AntecipacaoFormalizada",
+            "database",
+            "GeracaoArquivos",
+            "LiquidacaoRecebiveisAntecipacao",
+            "LoaderRecebiveis",
+            "par-bloqueiofraude-api",
+            "par-core",
+            "par-mq-api",
+            "par-mq-api-callcenter",
+            "par-mq-api-pos",
+            "par-rest-api",
+            "PARLogPRM",
+            "relatoriosAntecipacao",
+            "TravarCip"
+        ],
+        "criticos": 54,
+        "altos": 136
+    },
+    {
+        "id": "Verticais",
+        "area": "Gateway",
+        "repositorios": [
+            "CONFLUENCE",
+            "DIVERSOS",
+            "DOCS",
+            "GATEWAYOUT",
+            "INSTALADORES_GATEWAY",
+            "PTG",
+            "SDLC_BORLAND",
+            "SDLC_VS",
+            "SISCAP",
+            "TEFLAC_VS_X32",
+            "TEFLAC_VS_X64",
+            "TEFVERTICAIS_BORLAND",
+            "TEFVERTICAIS_VS",
+            "TESTECAPTURA"
+        ],
+        "criticos": 72,
+        "altos": 1
+    },
+    {
+        "id": "GetCripto",
+        "area": "Gateway",
+        "repositorios": [
+            "daemontools",
+            "dr_server",
+            "filter_srv",
+            "getcripto",
+            "getcripto_database_service",
+            "getcripto_scripts",
+            "getcripto_stresser",
+            "getcripto_webservices",
+            "getcripto_windows",
+            "getproxy",
+            "hackathon",
+            "log_srv",
+            "poslog",
+            "ussd_router"
+        ],
+        "criticos": 0,
+        "altos": 5
+    },
+    {
+        "id": "Base24",
+        "area": "Autorizador",
+        "repositorios": [
+            "base24"
+        ],
+        "criticos": 0,
+        "altos": 0
+    },
+    {
+        "id": "Recarga",
+        "area": "Autorizador",
+        "repositorios": [
+            "gateway-boleto-online-interno-recarga"
+        ],
+        "criticos": 0,
+        "altos": 33
+    },
+    {
+        "id": "SISCAP",
+        "area": "Autorizador",
+        "repositorios": [
+            "ADV-FrameworkBase",
+            "AtendedorGenerico",
+            "Cabal",
+            "Calcard",
+            "CapturaCommons",
+            "CapturaPadrao",
+            "CapturaPadraoFrotas",
+            "CredSystem",
+            "DeployApps",
+            "ExpersFrete",
+            "FleetCor",
+            "Goodcard",
+            "Goodvale",
+            "Pascoal",
+            "Resolvedores",
+            "Serasa",
+            "Siscap",
+            "SiscapCache",
+            "SiscapConciliacao",
+            "SiscapMonitorPlugin",
+            "SiscapTests",
+            "SistemaCapturaLibs",
+            "Sorocred",
+            "tools-cap-verticais",
+            "Topazio",
+            "Unik"
+        ],
+        "criticos": 0,
+        "altos": 0
+    },
+    {
+        "id": "Cofre",
+        "area": "Anti-Fraude",
+        "repositorios": [
+            "cofre",
+            "cofre-migracao",
+            "cofre-token",
+            "cofre-tokenizerPadrao"
+        ],
+        "criticos": 0,
+        "altos": 12
+    },
+    {
+        "id": "Rede Neural",
+        "area": "Anti-Fraude",
+        "repositorios": [
+            "RN"
+        ],
+        "criticos": 1,
+        "altos": 9
+    },
+    {
+        "id": "PRM",
+        "area": "Anti-Fraude",
+        "repositorios": [
+            "prm"
+        ],
+        "criticos": 6,
+        "altos": 93
+    },
+    {
+        "id": "RED & Cybersource",
+        "area": "Anti-Fraude",
+        "repositorios": [
+            "antifraude-red"
+        ],
+        "criticos": 0,
+        "altos": 0
+    },
+    {
+        "id": "Interferência Autorização",
+        "area": "Anti-Fraude",
+        "repositorios": [
+            ""
+        ],
+        "criticos": 0,
+        "altos": 0
+    },
+    {
+        "id": "Payware",
+        "area": "Processamento",
+        "repositorios": [
+            "Payware",
+            "PaywareCMS",
+            "pipeline-payware"
+        ],
+        "criticos": 5,
+        "altos": 13
+    },
+    {
+        "id": "Clear/Clear Marketplace",
+        "area": "Processamento",
+        "repositorios": [
+            "Clear",
+            "gta"
+        ],
+        "criticos": 0,
+        "altos": 421
+    },
+    {
+        "id": "Prodist/CIP",
+        "area": "Processamento",
+        "repositorios": [
+            "cip"
+        ],
+        "criticos": 3,
+        "altos": 5
+    },
+    {
+        "id": "PaywareWEB",
+        "area": "Processamento",
+        "repositorios": [
+            "PaywareCMS"
+        ],
+        "criticos": 0,
+        "altos": 0
+    },
+    {
+        "id": "Portal Santander Getnet",
+        "area": "Relacionamento Digital",
+        "repositorios": [
+            "contrato-service-portal-santander",
+            "geps-portal-santander",
+            "libs-portal-santander",
+            "pa-deploy-web",
+            "simulador-ticket-portal-santander",
+            "web-portal-santander",
+            "zend-framework-portal-santander"
+        ],
+        "criticos": 750,
+        "altos": 1414
+    },
+    {
+        "id": "Site Getnet",
+        "area": "Relacionamento Digital",
+        "repositorios": [
+            "wp-site-getnet"
+        ],
+        "criticos": 2524,
+        "altos": 1607
+    }
+]
