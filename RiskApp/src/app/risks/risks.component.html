@@ -1,0 +1,20 @@
+<input type="text" class="input-group" [(ngModel)]="name" placeholder="Pesquisar Risco" aria-label="Pesquisar Risco"
+  aria-describedby="basic-addon2" (input)="Procurar()">
+
+<!-- <div *ngIf="this.match == false && name.touched">
+  <h3>Nenhum Risco ou Stakeholder encontrado!</h3>
+</div> -->
+<app-badges></app-badges>
+<div class="cards">
+  <div class="card" *ngFor="let risk of risks">
+    <div class="card-body">
+      <br>
+      <b>
+        <h4 class="card-title">{{risk.name}}</h4>
+      </b>
+      <p class="card-text">Stakeholder - {{risk.stakeholders[0]}}</p>
+      <a routerLink="/risk-details/{{risk._id}}" skipLocationChange class="btn" (click)="apiService.getRisks()">Ver
+        Detalhes</a>
+    </div>
+  </div>
+</div>

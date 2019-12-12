@@ -1,0 +1,16 @@
+<div class="cards">
+  <div class="card">
+    <div class="card-body">
+      <a routerLink="/" skipLocationChange class="btn">Voltar</a>
+      <br>
+      <b>
+        <h4 class="card-title"><strong>{{this.risk.name}}</strong></h4>
+      </b>
+      <h5 class="card-text"><strong>Stakeholder - </strong>{{this.risk.stakeholders[0]}}</h5>
+      <p class="card-text"><strong>Descrição - </strong>{{this.risk.description}}</p>
+      <p class="card-text"><strong>Última Modificação - </strong>{{this.risk.changedAt}}</p>
+      <p class="card-text"><strong>Último Comentário - </strong>{{this.risk.latestComment.comment}}</p>
+      <p class="card-text"><strong>Último Comentário na Task - </strong>{{this.risk.latestTaskComment.comment}}</p>
+    </div>
+  </div>
+</div>
