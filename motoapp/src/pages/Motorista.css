@@ -1,0 +1,51 @@
+.motorista {
+    margin: 20px;
+    display: grid;
+    grid: "bio stats"
+          "bio stats"
+          "bio stats"
+          /1fr 3fr;
+}
+.bio {
+    grid-area: bio;
+    padding: 15px;
+    height: 100%;    
+}
+.bio img {
+    margin: 0 auto;
+    width: 100%;
+    height: 12rem;
+}
+.bio button {
+    margin: 0 auto;
+}
+.stats {
+    grid-area: stats;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-content: flex-start;
+    grid-gap: 10px;
+}
+.stats .card {    
+    width: 18rem;
+    text-align: center;
+}
+.historico{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.cards {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    align-content: flex-start;
+    grid-gap: 10px;
+}
+.cards .card {    
+    width: 12rem;
+    text-align: center;
+}

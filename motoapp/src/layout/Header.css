@@ -1,0 +1,15 @@
+nav {
+    width: 100%;
+    text-align: center;
+}
+.form-inline button{
+    margin-right: 4px;
+}
+@media(max-width: 500px){
+    .navbar-collapse ul {
+        margin-left: auto;
+    }
+    .login {
+        float: left;
+    }
+}
