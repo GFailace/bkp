@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Wiki Getnet</title>
+</head>
+
+<body>
+
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo center">Wiki</a>
+            </div>
+        </nav>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="center">
+            <div class="col s12 m6 center">
+                <div class="card red accent-4">
+                    <div class="card-content white-text">
+                        <span class="card-title">Comandos Splunk</span>
+                        <p>Abaixo os comandos que podemos utilizar no Splunk listados por categoria.<br>
+                            Fonte - <a
+                                href="https://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Commandsbycategory"
+                                target="_blank">Site Splunk</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Comandos Splunk -->
+        <h5><span class="mw-headline" id="Commands_by_category">Commands by category</span></h5>
+        <p>The following tables list all the search commands, categorized by their usage. Some commands fit into
+            more
+            than one category based on the options that you specify.
+        </p>
+        <h4><span class="mw-headline" id="Correlation">Correlation</span></h4>
+        <p>These commands can be used to build correlation searches.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%" class="responsive-table col s6">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Append">append</a></code>
+                </td>
+                <td> Appends subsearch results to current results.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Appendcols">appendcols</a></code>
+                </td>
+                <td>Appends the fields of the subsearch results to current results, first results to first
+                    result,
+                    second to second, etc.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Appendpipe">appendpipe</a></code>
+                </td>
+                <td>Appends the result of the subpipeline applied to the current result set to results.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Arules">arules</a></code>
+                </td>
+                <td>Finds association rules between field values.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Associate">associate</a></code>
+                </td>
+                <td>Identifies correlations between fields.
+                </td>
+            </tr>
+            <tr>
+                <td> <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Contingency">contingency, counttable, ctable</a></code>
+                </td>
+                <td>Builds a contingency table for two fields.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Correlate">correlate</a></code>
+                </td>
+                <td>Calculates the correlation between different fields.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Diff">diff</a></code>
+                </td>
+                <td>Returns the difference between two search results.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Join">join</a></code>
+                </td>
+                <td>Combines the results from the main results pipeline with the results from a subsearch.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Lookup">lookup</a></code>
+                </td>
+                <td>Explicitly invokes field value lookups.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Selfjoin">selfjoin</a></code>
+                </td>
+                <td> Joins results with itself.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Set">set</a></code>
+                </td>
+                <td> Performs set operations (union, diff, intersect) on subsearches.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Stats">stats</a></code>
+                </td>
+                <td>Provides statistics, grouped optionally by fields. See <a class="external text"
+                        href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/CommonStatsFunctions">Statistical
+                        and charting functions</a>.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Transaction">transaction</a></code>
+                </td>
+                <td>Groups search results into transactions.
+                </td>
+            </tr>
+        </table>
+        <h4><span class="mw-headline" id="Data_and_indexes">Data and indexes</span></h4>
+        <p>These commands can be used to learn more about your data, add and delete data sources, or manage the
+            data
+            in
+            your summary indexes.
+        </p>
+        <h5><span class="mw-headline" id="View_data">View data</span></h5>
+        <p>These commands return information about the data you have in your indexes. They do not modify your
+            data
+            or
+            indexes in any way.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%" class="responsive-table left">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Audit">audit</a></code>
+                </td>
+                <td>Returns audit trail information that is stored in the local audit index.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Datamodel">datamodel</a></code>
+                </td>
+                <td>Return information about a data model or data model object.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Dbinspect">dbinspect</a></code>
+                </td>
+                <td>Returns information about the specified index.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Eventcount">eventcount</a></code>
+                </td>
+                <td>Returns the number of events in an index.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Metadata">metadata</a></code>
+                </td>
+                <td>Returns a list of source, sourcetypes, or hosts from a specified index or distributed search
+                    peer.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Typeahead">typeahead</a></code>
+                </td>
+                <td>Returns typeahead information on a specified prefix.
+                </td>
+            </tr>
+        </table>
+        <h5><span class="mw-headline" id="Manage_data">Manage data</span></h5>
+        <p>These are some commands you can use to add data sources to or delete specific data from your indexes.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Delete">delete</a></code>
+                </td>
+                <td>Delete specific events or search results.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Input">input</a></code>
+                </td>
+                <td>Add or disable sources.
+                </td>
+            </tr>
+        </table>
+        <h5><span class="mw-headline" id="Manage_summary_indexes">Manage summary indexes</span></h5>
+        <p>These commands are used to create and manage your summary indexes.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Collect">collect, stash</a></code>
+                </td>
+                <td>Puts search results into a summary index.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Overlap">overlap</a></code>
+                </td>
+                <td>Finds events in a summary index that overlap in time or have missed events.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Sichart">sichart</a></code>
+                </td>
+                <td>Summary indexing version of chart. Computes the necessary information for you to later run a
+                    chart
+                    search on the summary index.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Sirare">sirare</a></code>
+                </td>
+                <td>Summary indexing version of rare. Computes the necessary information for you to later run a rare
+                    search on the summary index.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Sistats">sistats</a></code>
+                </td>
+                <td>Summary indexing version of stats. Computes the necessary information for you to later run a
+                    stats
+                    search on the summary index.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Sitimechart">sitimechart</a></code>
+                </td>
+                <td>Summary indexing version of timechart. Computes the necessary information for you to later run a
+                    timechart search on the summary index.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Sitop">sitop</a></code>
+                </td>
+                <td>Summary indexing version of top. Computes the necessary information for you to later run a top
+                    search on the summary index.
+                </td>
+            </tr>
+        </table>
+        <h4><span class="mw-headline" id="Fields">Fields</span></h4>
+        <p>These are commands you can use to add, extract, and modify fields or field values. The most useful
+            command
+            for manipulating fields is
+            <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Eval">eval</a></code>
+            and its <a class="external text"
+                href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/CommonEvalFunctions">statistical
+                and charting functions</a>.
+        </p>
+        <h5><span class="mw-headline" id="Add_fields">Add fields</span></h5>
+        <p>Use these commands to add new fields.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Accum">accum</a></code>
+                </td>
+                <td> Keeps a running total of the specified numeric field.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Addinfo">addinfo</a></code>
+                </td>
+                <td>Add fields that contain common information about the current search.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Addtotals">addtotals</a></code>
+                </td>
+                <td>Computes the sum of all numeric fields for each result.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Delta">delta</a></code>
+                </td>
+                <td>Computes the difference in field value between nearby results.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Eval">eval</a></code>
+                </td>
+                <td>Calculates an expression and puts the value into a field. See also, <a class="external text"
+                        href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/CommonEvalFunctions">evaluation
+                        functions</a>.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Iplocation">iplocation</a></code>
+                </td>
+                <td>Adds location information, such as city, country, latitude, longitude, and so on, based on IP
+                    addresses.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Lookup">lookup</a></code>
+                </td>
+                <td>For configured lookup tables, explicitly invokes the field value lookup and adds fields from the
+                    lookup table to the events.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Multikv">multikv</a></code>
+                </td>
+                <td> Extracts field-values from table-formatted events.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Rangemap">rangemap</a></code>
+                </td>
+                <td>Sets RANGE field to the name of the ranges that match.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Relevancy">relevancy</a></code>
+                </td>
+                <td>Adds a relevancy field, which indicates how well the event matches the query.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Strcat">strcat</a></code>
+                </td>
+                <td>Concatenates string values and saves the result to a specified field.
+                </td>
+            </tr>
+        </table>
+        <h5><span class="mw-headline" id="Extract_fields">Extract fields</span></h5>
+        <p>These commands provide different ways to extract new fields from search results.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Erex">erex</a></code>
+                </td>
+                <td>Allows you to specify example or counter example values to automatically extract fields that
+                    have
+                    similar values.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Extract">extract, kv</a></code>
+                </td>
+                <td>Extracts field-value pairs from search results.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Kvform">kvform</a></code>
+                </td>
+                <td>Extracts values from search results, using a form template.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Rex">rex</a></code>
+                </td>
+                <td>Specify a Perl regular expression named groups to extract fields while you search.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Spath">spath</a></code>
+                </td>
+                <td> Provides a straightforward means for extracting fields from structured data formats, XML and
+                    JSON.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Xmlkv">xmlkv</a></code>
+                </td>
+                <td>Extracts XML key-value pairs.
+                </td>
+            </tr>
+        </table>
+        <h5><span class="mw-headline" id="Modify_fields_and_field_values">Modify fields and field values</span></h5>
+        <p>Use these commands to modify fields or their values.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Convert">convert</a></code>
+                </td>
+                <td>Converts field values into numerical values.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Filldown">filldown</a></code>
+                </td>
+                <td>Replaces NULL values with the last non-NULL value.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Fillnull">fillnull</a></code>
+                </td>
+                <td>Replaces null values with a specified value.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Makemv">makemv</a></code>
+                </td>
+                <td>Change a specified field into a multivalue field during a search.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Nomv">nomv</a></code>
+                </td>
+                <td>Changes a specified multivalue field into a single-value field at search time.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Reltime">reltime</a></code>
+                </td>
+                <td>Converts the difference between 'now' and '_time' to a human-readable value and adds adds this
+                    value
+                    to the field, 'reltime', in your search results.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Rename">rename</a></code>
+                </td>
+                <td>Renames a specified field. Use wildcards to specify multiple fields.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Replace">replace</a></code>
+                </td>
+                <td>Replaces values of specified fields with a specified new value.
+                </td>
+            </tr>
+        </table>
+        <h4><span class="mw-headline" id="Find_anomalies">Find anomalies</span></h4>
+        <p>These commands are used to find anomalies in your data. Either search for uncommon or outlying events and
+            fields or cluster similar events together.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/analyzefields">analyzefields, af</a></code>
+                </td>
+                <td>Analyze numerical fields for their ability to predict another discrete field.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Anomalies">anomalies</a></code>
+                </td>
+                <td>Computes an "unexpectedness" score for an event.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Anomalousvalue">anomalousvalue</a></code>
+                </td>
+                <td>Finds and summarizes irregular, or uncommon, search results.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Anomalydetection">anomalydetection</a></code>
+                </td>
+                <td>Identifies anomalous events by computing a probability for each event and then detecting
+                    unusually
+                    small probabilities.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Cluster">cluster</a></code>
+                </td>
+                <td>Clusters similar events together.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Kmeans">kmeans</a></code>
+                </td>
+                <td>Performs k-means clustering on selected fields.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Outlier">outlier</a></code>
+                </td>
+                <td>Removes outlying numerical values.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Rare">rare</a></code>
+                </td>
+                <td>Displays the least common values of a field.
+                </td>
+            </tr>
+        </table>
+        <h4><span class="mw-headline" id="Geographic_and_location">Geographic and location</span></h4>
+        <p>These commands add geographical information to your search results.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Iplocation">iplocation</a></code>
+                </td>
+                <td>Returns location information, such as city, country, latitude, longitude, and so on, based on IP
+                    addresses.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Geom">geom</a></code>
+                </td>
+                <td>Adds a field, named "geom", to each event. This field contains geographic data structures for
+                    polygon geometry in JSON and is used for choropleth map visualization. This command requires an
+                    external lookup with <code>external_type=geo</code> to be installed.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Geomfilter">geomfilter</a></code>
+                </td>
+                <td> Accepts two points that specify a bounding box for clipping choropleth maps. Points that fall
+                    outside of the bounding box are filtered out.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Geostats">geostats</a></code>
+                </td>
+                <td>Generate statistics which are clustered into geographical bins to be rendered on a world map.
+                </td>
+            </tr>
+        </table>
+        <h4><span class="mw-headline" id="Metrics">Metrics</span></h4>
+        <p>These commands work with metrics data.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Mcollect">mcollect</a></code>
+                </td>
+                <td>Converts events into metric data points and inserts the data points into a metric index on the
+                    search head.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Meventcollect">meventcollect</a></code>
+                </td>
+                <td>Converts events into metric data points and inserts the data points into a metric index on
+                    indexer
+                    tier.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Mstats">mstats</a></code>
+                </td>
+                <td>Calculates visualization-ready statistics for the <code>measurement</code>,
+                    <code>metric_name</code>, and <code>dimension</code> fields in metric indexes.
+                </td>
+            </tr>
+        </table>
+        <h4><span class="mw-headline" id="Prediction_and_trending">Prediction and trending</span></h4>
+        <p>These commands predict future values and calculate trendlines that can be used to create visualizations.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Predict">predict</a></code>
+                </td>
+                <td> Enables you to use time series algorithms to predict future values of fields.
+                </td>
+            </tr>
+            <tr>
+                <td> <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Trendline">trendline</a></code>
+                </td>
+                <td> Computes moving averages of fields.
+                </td>
+            </tr>
+            <tr>
+                <td> <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/X11">x11</a></code>
+                </td>
+                <td> Enables you to determine the trend in your data by removing the seasonal pattern.
+                </td>
+            </tr>
+        </table>
+        <p><br />
+        </p>
+        <h4><span class="mw-headline" id="Reports">Reports</span></h4>
+        <p>These commands are used to build <b><a href="/Splexicon:Transformingsearch"
+                    title="Splexicon:Transformingsearch">transforming searches</a></b>. These commands return
+            statistical data tables that are required for charts and other kinds of data visualizations.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Addtotals">addtotals</a></code>
+                </td>
+                <td>Computes the sum of all numeric fields for each result.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Autoregress">autoregress</a></code>
+                </td>
+                <td>Prepares your events for calculating the autoregression, or moving average, based on a field
+                    that
+                    you specify.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Bucket">bin, discretize</a></code>
+                </td>
+                <td>Puts continuous numerical values into discrete sets.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Chart">chart</a></code>
+                </td>
+                <td>Returns results in a tabular output for charting. See also, <a class="external text"
+                        href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/CommonStatsFunctions">Statistical
+                        and charting functions</a>.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Contingency">contingency, counttable, ctable</a></code>
+                </td>
+                <td>Builds a contingency table for two fields.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Correlate">correlate</a></code>
+                </td>
+                <td>Calculates the correlation between different fields.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Eventcount">eventcount</a></code>
+                </td>
+                <td>Returns the number of events in an index.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Eventstats">eventstats</a></code>
+                </td>
+                <td>Adds summary statistics to all search results.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Gauge">gauge</a></code>
+                </td>
+                <td>Transforms results into a format suitable for display by the Gauge chart types.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Makecontinuous">makecontinuous</a></code>
+                </td>
+                <td>Makes a field that is supposed to be the x-axis continuous (invoked by chart/timechart)
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Mstats">mstats</a></code>
+                </td>
+                <td>Calculates statistics for the measurement, metric_name, and dimension fields in metric indexes.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Outlier">outlier</a></code>
+                </td>
+                <td>Removes outlying numerical values.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Rare">rare</a></code>
+                </td>
+                <td>Displays the least common values of a field.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Stats">stats</a></code>
+                </td>
+                <td>Provides statistics, grouped optionally by fields. See also, <a class="external text"
+                        href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/CommonStatsFunctions">Statistical
+                        and charting functions</a>.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Streamstats">streamstats</a></code>
+                </td>
+                <td>Adds summary statistics to all search results in a streaming manner.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Timechart">timechart</a></code>
+                </td>
+                <td>Create a time series chart and corresponding table of statistics. See also, <a class="external text"
+                        href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/CommonStatsFunctions">Statistical
+                        and charting functions</a>.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Top">top</a></code>
+                </td>
+                <td>Displays the most common values of a field.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Trendline">trendline</a></code>
+                </td>
+                <td>Computes moving averages of fields.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Tstats">tstats</a></code>
+                </td>
+                <td>Performs statistical queries on indexed fields in <code>tsidx</code> files.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Untable">untable</a></code>
+                </td>
+                <td>Converts results from a tabular format to a format similar to <code>stats</code> output. Inverse
+                    of
+                    <code>xyseries</code> and <code>maketable</code>.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Xyseries">xyseries</a></code>
+                </td>
+                <td>Converts results into a format suitable for graphing.
+                </td>
+            </tr>
+        </table>
+        <h4><span class="mw-headline" id="Results">Results</span></h4>
+        <p>These commands can be used to manage search results. For example, you can append one set of results with
+            another, filter more events from the results, reformat the results, and so on.
+        </p>
+        <h5><span class="mw-headline" id="Alerting">Alerting</span></h5>
+        <p>Use this command to email the results of a search.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Sendemail">sendemail</a></code>
+                </td>
+                <td> Emails search results, either inline or as an attachment, to one or more specified email
+                    addresses.
+                </td>
+            </tr>
+        </table>
+        <p><br />
+        </p>
+        <h5><span class="mw-headline" id="Appending">Appending</span></h5>
+        <p>Use these commands to append one set of results with another set or to itself.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Append">append</a></code>
+                </td>
+                <td>Appends subsearch results to current results.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Appendcols">appendcols</a></code>
+                </td>
+                <td>Appends the fields of the subsearch results to current results, first results to first result,
+                    second to second, and so on.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Join">join</a></code>
+                </td>
+                <td>SQL-like joining of results from the main results pipeline with the results from the
+                    subpipeline.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Selfjoin">selfjoin</a></code>
+                </td>
+                <td> Joins results with itself.
+                </td>
+            </tr>
+        </table>
+        <h5><span class="mw-headline" id="Filtering">Filtering</span></h5>
+        <p>Use these commands to remove more events or fields from your current results.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Dedup">dedup</a></code>
+                </td>
+                <td>Removes subsequent results that match a specified criteria.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Fields">fields</a></code>
+                </td>
+                <td>Removes fields from search results.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/From">from</a></code>
+                </td>
+                <td>Retrieves data from a dataset, such as a data model dataset, a CSV lookup, a KV Store lookup, a
+                    saved search, or a table dataset.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Mvcombine">mvcombine</a></code>
+                </td>
+                <td>Combines events in search results that have a single differing field value into one result with
+                    a
+                    multivalue field of the differing field.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Regex">regex</a></code>
+                </td>
+                <td>Removes results that do not match the specified regular expression.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Searchtxn">searchtxn</a></code>
+                </td>
+                <td>Finds transaction events within specified search constraints.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Table">table</a></code>
+                </td>
+                <td>Creates a table using the specified fields.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Uniq">uniq</a></code>
+                </td>
+                <td>Removes any search that is an exact duplicate with a previous result.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Where">where</a></code>
+                </td>
+                <td>Performs arbitrary filtering on your data. See also, <a class="external text"
+                        href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/CommonEvalFunctions">Evaluation
+                        functions</a>.
+                </td>
+            </tr>
+        </table>
+        <h5><span class="mw-headline" id="Formatting">Formatting</span></h5>
+        <p>Use these commands to reformat your current results.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Untable">untable</a></code>
+                </td>
+                <td>Converts results from a tabular format to a format similar to <code>stats</code> output. Inverse
+                    of
+                    <code>xyseries</code> and <code>maketable</code>.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Xyseries">xyseries</a></code>
+                </td>
+                <td>Converts results into a format suitable for graphing.
+                </td>
+            </tr>
+        </table>
+        <h5><span class="mw-headline" id="Generating">Generating</span></h5>
+        <p>Use these commands to generate or return events.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Gentimes">gentimes</a></code>
+                </td>
+                <td>Returns results that match a time-range.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Loadjob">loadjob</a></code>
+                </td>
+                <td>Loads events or results of a previously completed search job.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Makeresults">makeresults</a></code>
+                </td>
+                <td>Creates a specified number of empty search results.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Mvexpand">mvexpand</a></code>
+                </td>
+                <td>Expands the values of a multivalue field into separate events for each value of the multivalue
+                    field.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Savedsearch">savedsearch</a></code>
+                </td>
+                <td>Returns the search results of a saved search.
+                </td>
+            </tr>
+            <tr>
+                <td> <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Search">search</a></code>
+                </td>
+                <td> Searches indexes for matching events. This command is implicit at the start of every search
+                    pipeline that does not begin with another generating command.
+                </td>
+            </tr>
+        </table>
+        <h5><span class="mw-headline" id="Grouping">Grouping</span></h5>
+        <p>Use these commands to group or classify the current results.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Cluster">cluster</a></code>
+                </td>
+                <td>Clusters similar events together.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Kmeans">kmeans</a></code>
+                </td>
+                <td>Performs k-means clustering on selected fields.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Mvexpand">mvexpand</a></code>
+                </td>
+                <td>Expands the values of a multivalue field into separate events for each value of the multivalue
+                    field.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Transaction">transaction</a></code>
+                </td>
+                <td>Groups search results into transactions.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Typelearner">typelearner</a></code>
+                </td>
+                <td>Generates suggested eventtypes.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Typer">typer</a></code>
+                </td>
+                <td>Calculates the eventtypes for the search results.
+                </td>
+            </tr>
+        </table>
+        <h5><span class="mw-headline" id="Reordering">Reordering</span></h5>
+        <p>Use these commands to change the order of the current search results.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Head">head</a></code>
+                </td>
+                <td>Returns the first number n of specified results.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Reverse">reverse</a></code>
+                </td>
+                <td>Reverses the order of the results.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Sort">sort</a></code>
+                </td>
+                <td>Sorts search results by the specified fields.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Tail">tail</a></code>
+                </td>
+                <td>Returns the last number N of specified results
+                </td>
+            </tr>
+        </table>
+        <h5><span class="mw-headline" id="Reading">Reading</span></h5>
+        <p>Use these commands to read in results from external files or previous searches.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Inputcsv">inputcsv</a></code>
+                </td>
+                <td>Loads search results from the specified CSV file.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Inputlookup">inputlookup</a></code>
+                </td>
+                <td>Loads search results from a specified static lookup table.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Loadjob">loadjob</a></code>
+                </td>
+                <td>Loads events or results of a previously completed search job.
+                </td>
+            </tr>
+        </table>
+        <h5><span class="mw-headline" id="Writing">Writing</span></h5>
+        <p>Use these commands to define how to output current search results.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Collect">collect, stash</a></code>
+                </td>
+                <td>Puts search results into a summary index.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Meventcollect">meventcollect</a></code>
+                </td>
+                <td>Converts events into metric data points and inserts the data points into a metric index on
+                    indexer
+                    tier.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Mcollect">mcollect</a></code>
+                </td>
+                <td>Converts events into metric data points and inserts the data points into a metric index on the
+                    search head.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Outputcsv">outputcsv</a></code>
+                </td>
+                <td>Outputs search results to a specified CSV file.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Outputlookup">outputlookup</a></code>
+                </td>
+                <td>Writes search results to the specified static lookup table.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Outputtext">outputtext</a></code>
+                </td>
+                <td>Ouputs the raw text field (<code>_raw</code>) of results into the <code>_xml</code> field.
+                </td>
+            </tr>
+            <tr>
+                <td> <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Sendemail">sendemail</a></code>
+                </td>
+                <td> Emails search results, either inline or as an attachment, to one or more specified email
+                    addresses.
+                </td>
+            </tr>
+        </table>
+        <h4><span class="mw-headline" id="Search">Search</span></h4>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td> <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Localop">localop</a></code>
+                </td>
+                <td> Run subsequent commands, that is all commands following this, locally and not on a remote peer.
+                </td>
+            </tr>
+            <tr>
+                <td> <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Map">map</a></code>
+                </td>
+                <td> A looping operator, performs a search over each search result.
+                </td>
+            </tr>
+            <tr>
+                <td> <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Redistribute">redistribute</a></code>
+                </td>
+                <td> Invokes parallel reduce search processing to shorten the search runtime of a set of supported
+                    SPL
+                    commands.
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Search">search</a></code>
+                </td>
+                <td> Searches indexes for matching events. This command is implicit at the start of every search
+                    pipeline that does not begin with another generating command.
+                </td>
+            </tr>
+            <tr>
+                <td> <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Sendemail">sendemail</a></code>
+                </td>
+                <td> Emails search results, either inline or as an attachment, to one or more specified email
+                    addresses.
+                </td>
+            </tr>
+        </table>
+        <h4><span class="mw-headline" id="Subsearch">Subsearch</span></h4>
+        <p>These are commands that you can use with <b><a href="/Splexicon:Subsearch"
+                    title="Splexicon:Subsearch">subsearches</a></b>.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Append">append</a></code>
+                </td>
+                <td>Appends subsearch results to current results.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Appendcols">appendcols</a></code>
+                </td>
+                <td>Appends the fields of the subsearch results to current results, first results to first result,
+                    second to second, and so on.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Appendpipe">appendpipe</a></code>
+                </td>
+                <td>Appends the result of the subpipeline applied to the current result set to results.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Foreach">foreach</a></code>
+                </td>
+                <td>Runs a templated streaming subsearch for each field in a wildcarded field list.
+                </td>
+            </tr>
+            <tr>
+                <td> <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Format">format</a></code>
+                </td>
+                <td> Takes the results of a subsearch and formats them into a single result.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Join">join</a></code>
+                </td>
+                <td>Combine the results of a subsearch with the results of a main search.
+                </td>
+            </tr>
+            <tr>
+                <td> <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Return">return</a></code>
+                </td>
+                <td> Specify the values to return from a subsearch.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Set">set</a></code>
+                </td>
+                <td> Performs set operations (union, diff, intersect) on subsearches.
+                </td>
+            </tr>
+        </table>
+        <h4><span class="mw-headline" id="Time">Time</span></h4>
+        <p>Use these commands to search based on time ranges or add time information to your events.
+        </p>
+        <table cellpadding="10" cellspacing="0" border="1" width="100%">
+            <tr>
+                <th>Command
+                </th>
+                <th>Description
+                </th>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Gentimes">gentimes</a></code>
+                </td>
+                <td>Returns results that match a time-range.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Localize">localize</a></code>
+                </td>
+                <td>Returns a list of the time ranges in which the search results were found.
+                </td>
+            </tr>
+            <tr>
+                <td><code><a class="external text" href="http://docs.splunk.com/Documentation/Splunk/7.2.6/SearchReference/Reltime">reltime</a></code>
+                </td>
+                <td>Converts the difference between 'now' and '_time' to a human-readable value and adds adds this
+                    value
+                    to the field, 'reltime', in your search results.
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="footer col s12">
+        <p class="center">Wiki - Guilherme Failace &copy; 2019</p>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

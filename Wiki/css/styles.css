@@ -1,0 +1,55 @@
+hr{
+    height: 5px;
+    background-color: #4f1e4f;
+    margin: 0;
+    width: 100%;
+    border: none;
+}
+.card a{
+    color: #FFFFFF;
+}
+.card a:hover{
+    color:#4f1e4f;
+}
+a{
+    color:#d50000;
+}
+a:hover{
+    color:#4f1e4f;
+}
+#dropdown1 a{
+    color: #d50000;
+}
+#dropdown1 a:hover{
+    color: black;
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #d50000;
+    color: #FFFFFF;
+    padding: 2px;
+}
+.nav-wrapper{
+    margin: 0 auto;
+    padding: 5px 10px;
+    background-color: #d50000;
+}
+.brand-logo{
+    padding: 4px;
+}
+#lista1 a{
+    color: black;
+}
+#lista1 a:hover{
+    background-color: #d50000;
+    color: white;
+}
+#lista2 a{
+    color: black;
+}
+#lista2 a:hover{
+    background-color: red;
+    color: white;
+}
