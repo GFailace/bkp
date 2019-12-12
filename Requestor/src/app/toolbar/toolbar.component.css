@@ -1,0 +1,10 @@
+.tools {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.tools button {
+    padding: 20px;
+}

@@ -1,0 +1,10 @@
+.navbar {
+    background: transparent;
+    text-align: center;
+}
+.navbar a {
+    color: white;
+}
+.navbar-brand {
+    font-size: 24px;
+}

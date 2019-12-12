@@ -1,0 +1,23 @@
+<div class="cards">
+  <div class="card" *ngFor="let title of titles">
+    <div class="card-body">
+      <h5 class="card-title">{{title}}</h5>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Título</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let req of requests.requests">
+          <tr>
+            <th scope="row">{{req.id}}</th>
+            <td>{{req.title}}</td>
+            <td>{{req.status}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
