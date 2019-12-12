@@ -1,0 +1,24 @@
+.header{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    width: 100%;
+    background: #ee0000;
+    color: white;
+}
+.header .name {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+.header .logo {
+    float: left;
+    margin: auto 20px;
+}
+
+@media(max-width:600px){
+    .header h2 {
+        font-size: 20px;
+    }
+}
